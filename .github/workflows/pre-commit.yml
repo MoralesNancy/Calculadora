@@ -11,7 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
-    - uses: @actions/core@v1.2.6
     - name: set PY
       run: echo "::set-env addpath exportVariable name=PY::$(python -c 'import hashlib, sys;print(hashlib.sha256(sys.version.encode()+sys.executable.encode()).hexdigest())')"
     - uses: actions/cache@v3
