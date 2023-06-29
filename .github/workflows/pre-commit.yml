@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
     - name: set PY
-      run: echo "::set-env addpath exportVariable name=PY::$(python -c 'import hashlib, sys;print(hashlib.sha256(sys.version.encode()+sys.executable.encode()).hexdigest())')"
+      run: echo "::set-output name=PY_HASH::$(python -c 'import hashlib, sys; print(hashlib.sha256(sys.version.encode() + sys.executable.encode()).hexdigest())')"
     - uses: actions/cache@v3
       with:
         path: ~/.cache/pre-commit
