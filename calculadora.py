@@ -9,7 +9,11 @@ print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 # Creamos la funcion para las operaciones
 def operaciones():
-    opciones = int(input("\n 1. Suma, 2. Resta, 3. Multiplicacion, 4. Division, 5. Raiz Cuadrada: "))
+    opciones = int(
+        input(
+            "\n 1. Suma, 2. Resta, 3. Multiplicacion, 4. Division, 5. Raiz Cuadrada: "
+        )
+    )
     # Guardamos la eleccion anterior en una variable
     eleccion = opciones
 
