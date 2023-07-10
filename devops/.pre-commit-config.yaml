@@ -1,0 +1,29 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: check-yaml
+    -   id: check-ast
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-json
+    -   id: name-tests-test
+    -   id: requirements-txt-fixer
+    -   id: check-builtin-literals
+    -   id: fix-encoding-pragma
+    -   id: python-check-blanket-noqa
+    -   id: python-check-blanket-type-ignore
+    -   id: python-check-mock-methods
+    -   id: python-no-eval
+    -   id: python-no-log-warn
+    -   id: python-use-type-annotations
+    -   id: python-import-sorter
+    -   id: reorder-python-imports
+    -   id: dead
+    -   id: python-safety-dependencies-check
+    -   id: cfn-python-lint
+
+-   repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+    -   id: black
