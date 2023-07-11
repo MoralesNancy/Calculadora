@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Calculadora en consola
 import math
 
